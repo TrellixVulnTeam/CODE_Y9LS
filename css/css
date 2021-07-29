@@ -1,0 +1,419 @@
+/*******************************************estilos generales******************************+**************************/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.fondoPantalla{
+    background-image: url("../img/diplomatico.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 1088px 690px;
+    background-color:black;
+}
+.bordes{
+    border:#947921 5px solid;
+}
+h1 {
+    color:#947921;
+    font-size: 70px;
+    font-family: Rye;
+    font-style: italic;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow:
+    -1px 1px #FFFFFF,
+    1px 1px 0 #FFFFFF;
+    width: 250px;
+    height: 80px;
+    margin: 30px 500px;
+    padding:5px 5px;
+    position: absolute;
+    top: 15px;
+}
+h2{
+    color:#DEA800;
+    font-size: 40px;
+    font-family: IM Fell English SC;
+    text-align: center;
+}
+.subtitulo{
+    width: 350px;
+    height: 50px;
+    margin: 20px 450px;
+    padding: 5px 5px;
+    position: absolute;
+    top: 120px;
+}
+nav ul li a{
+    color:#947921;
+    font-size: 28px;
+    text-decoration: none;
+    line-height: 60px;
+}
+nav ul li a:hover{
+    color:beige;
+}
+nav{
+    width: 270px;
+    height: 300px;
+    margin: 10px 400px 15px 30px;
+    padding: 5px 5px;
+}
+.fondoBoton{
+    background-color: black;
+    color:#947921;
+    display: block;
+}
+h4{
+    color:#cecdb0;
+}
+h6{
+    text-align:right;
+    color: rgb(51, 49, 49);
+    margin: 10px 5px;
+}
+.pie{
+    background-image: linear-gradient(to right, rgb(0, 0, 0),rgb(78, 64, 19), rgb(236, 223, 145));
+    transition: all 2s;
+}
+.pie:hover{
+    height: 100px;
+    border: #947921 4px;
+}
+/********************************************estilos de index******************************************************/
+#tamañoDeParrafo{
+    font-size: 40px;
+    text-align: center;
+    color:#FFFFFF;
+    width: 700px;
+    height: 80px;
+    margin: 30px 300px;
+    padding: 5px 5px;
+    position: absolute;
+    top: 360px;
+}
+#ubicacion{
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    left:1200px;
+}
+#ubicacion1{
+    position: absolute;
+    top: 170px;
+    right: 50px;
+    left:1200px;
+
+}
+.letra{
+    color:#947921;
+    text-decoration: none;
+}
+/*******************************************estilos de haz tu compra****************************************************/
+.venta{
+    display: inline;
+}
+/**********************aqui va estilos de flex********************/
+.padre-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:flex-end;
+    align-content: space-around;
+    flex-shrink: 10px;
+}
+.papa-flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    align-items:flex-end;
+    align-content: space-around;
+    flex-shrink: 10px;
+}
+.hijoflex{
+    order: -1;
+    flex-basis:50px;
+}
+/************aplicacion de grid************/
+.grid1{
+    display: grid;
+    grid-template-areas:
+    "image image image image"
+    "valor valor valor valor"
+    "compra compra compra compra";
+    grid-template-columns:200px 200px 200px 200px;
+    grid-template-rows: 70px 90px 120px 90px 120px;
+    position: absolute;
+    top: 50px;
+ }
+/****************nombres de areas***************/
+.image{
+    grid-area: image;
+}
+.valor{
+    grid-area: valor;
+}
+.compra{
+    grid-area: compra;
+}
+
+/**************************************************estilos de blog**************************************************/
+p{
+    color:#FFFFFF;
+    font-size: 20px;
+    font-family: Neucha;
+    line-height: 30px;
+    word-spacing: 4px;
+}
+div{
+    width: 1050px;
+    height: 345px;
+    margin: 10px 280px;
+    padding: 5px 5px;
+    border:0px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 200px ;
+}
+.derecha{
+    text-align: right;
+}
+.izquierda{
+    text-align: left;
+}
+#video{
+    position: absolute;
+    top: 2200px;
+    left: 120px;
+}
+/*************aplicacion de grid*******/
+.grilla{
+    display: grid;
+    grid-template-areas: 
+    "imagen curiosidades"
+    "imagen texto"
+    "imagen texto";
+    grid-template-columns:200px 750px;
+    grid-template-rows: 70px 380px;
+    position: absolute;
+}
+.grilla1{
+    display: grid;
+    grid-template-areas:
+    "titulo vino"
+    "parr vino"
+    "parr1 vino"
+    "parr2 vino"
+    "parr3 vino"
+    "parr4 vino";
+    grid-template-columns:790px 200px;
+    grid-template-rows:70px 90px 120px 90px 120px;
+    position: absolute;
+    top: 500px;
+}
+.grilla2{
+    display: grid;
+    grid-template-areas:
+    "ron titu"
+    "ron text"
+    "ron text1"
+    "ron text2"
+    "ron text3";
+    grid-template-columns:200px 750px;
+    grid-template-rows:70px 290px 290px 170px;
+    position: absolute;
+    top: 1100px;
+}
+/****************nombre de las areas******************************/
+.img{
+    grid-area: imagen;
+}
+#curiosidades{
+    grid-area: curiosidades;
+}
+#texto{
+    grid-area: texto;
+}
+#vino{
+    grid-area: vino;
+}
+#titulo{
+    grid-area: titulo;
+}
+#parr{
+    grid-area: parr;
+}
+#parr1{
+    grid-area: parr1;
+}
+#parr2{
+    grid-area: parr2;
+}
+#parr3{
+    grid-area: parr3;
+}
+#parr4{
+    grid-area: parr4;
+}
+#ron{
+    grid-area: ron;
+}
+#titu{
+    grid-area: titu;
+}
+#text{
+    grid-area: text;
+}
+#text1{
+    grid-area: text1;
+}
+#text2{
+    grid-area: text2;
+}
+#text3{
+    grid-area: text3;
+}
+/****************************************************estilos de contactanos*******************************************/
+#central{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: Neucha;
+    width: 400px;
+    height: 150px;
+    margin: 10px 450px;
+    padding: 5px 5px;
+    border: #FFFFFF double 7px;
+    background-color: black;
+    position: absolute;
+    top: 300px;
+}
+/**********************************************estilos de aliados************************************************/
+#color{
+    color: midnightblue;
+    font-size: 20px;
+    background-color: rgb(60, 91, 100);
+    border: blanchedalmond solid;
+    font-family: IM Fell English SC;
+    line-height: 26px;
+    position: absolute;
+    top: 260px;
+    left: 360px;
+}
+th{
+    color: darkblue;
+    font-size: 25px;
+    background-color: black;
+}
+/*******************************************estilo de inscripcion y contactanos***************************************/
+#inscripcion{
+    position: absolute;
+    top: 225px;
+    left: 600px;
+}
+.tipoDeTitulos{
+    color:#947921;
+    font-family: IM Fell English SC;
+    font-size: 24px;
+}
+.form1{
+    width: 450px;
+    height: 260px;
+    margin: 10px 500px;
+    padding: 5px 5px;
+    border: #FFFFFF double 7px;
+    background-color: black;
+    position: absolute;
+    top: 250px;
+}
+.form2{
+    width: 450px;
+    height: 245px;
+    margin: 10px 300px;
+    padding: 5px 5px;
+    border: #FFFFFF double 7px;
+    background-color: black;
+    position: absolute;
+    top: 270px;
+    left: 45px;
+    overflow: auto;
+}
+.form3{
+    width: 450px;
+    height: 245px;
+    margin: 10px 500px;
+    padding: 5px 5px;
+    border: #FFFFFF double 7px;
+    background-color: black;
+    position: absolute;
+    top: 270px;
+    left: 350px;
+}
+label{
+    color: #FFFFFF;
+}
+.botones{
+    background-color: black;
+    color:#947921;
+    display: block;
+}
+/************************media queres***********************************/
+@media(max-width:480px){
+    .bordes{
+        width: 145px;
+        height:95px;
+    }
+    .fondoPantalla{
+        background-image: url("../img/fondo1.png");       
+        background-repeat: no-repeat;
+        background-size: 100%;
+        }
+    h1{
+        width: 10px;
+        height: 8px;
+        margin: 8px 180px;
+        font-size:40px;
+    }
+    .subtitulo{
+        width: 250px;
+        font-size:20px;
+        position: absolute;
+        top: 20px;
+        margin:50px 110px;
+    }
+    nav ul li a{
+        font-size: 12px;
+        text-decoration:none;
+        line-height:20px;
+    }
+    #tamañoDeParrafo{
+        width: 250px;
+        height: 40px;
+        font-size: 30px;
+        margin: 20px 40px;
+        position: absolute;
+        top: 270px;
+        left:20px;
+    }
+    .menu-flex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 270px;
+        text-decoration: none;
+        background-color:black;
+        margin: 40px 10px;
+    }
+    .pie{
+        margin: 100px 30px;
+    }
+    .fondoBoton{
+        transform: translatex(-920px);
+    }
+}
+        <div class="button--position">
+            <button class="button--fondoBoton"><a href="../code/paginas/inscripcion.html">inscripcion</a></button>
+            <button class="button--fondoBoton" ><a href="../code/paginas/comentarios.html">Comentarios</a></button>
+        </div>
