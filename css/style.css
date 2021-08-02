@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.fondoPantalla {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-rows: 1fr 1fr 1fr 0.1fr;
+  grid-template-columns: 20% 27% 27% 26%;
+  grid-template-areas: " nav   header header header" " nav    main   main    main" " nav    main   main    main" "footer footer footer  footer ";
+  background: #031b14;
+  background: linear-gradient(#010c09 0%, #071916 30%, #083129 58%, #08473d 87%, #157c6b 97%, #0da78a 100%); }
+  .fondoPantalla header {
+    grid-area: header;
+    width: 100%; }
+    .fondoPantalla header img {
+      display: block;
+      margin: 1.0rem auto;
+      width: 27.0rem;
+      height: 15.0rem;
+      border: #018075 inset; }
+    .fondoPantalla header #logo {
+      margin-left: 40.0rem; }
+    .fondoPantalla header h1 {
+      margin-left: 30.0rem;
+      font-size: 5.0rem;
+      color: #018075;
+      font-family: 'Cinzel', serif; }
+    .fondoPantalla header .boton {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #018075;
+      background-color: black;
+      float: right;
+      padding: 1.0rem;
+      margin: 0.6rem;
+      font-family: 'Cinzel', serif; }
+    .fondoPantalla header .boton:hover {
+      transition: 2.0s;
+      color: #62f5fa; }
+  .fondoPantalla nav {
+    grid-area: nav;
+    background-image: url(../img/corcho.png);
+    width: auto; }
+    .fondoPantalla nav .menu {
+      padding: 10px;
+      position: absolute;
+      top: 25.0rem;
+      background-color: black;
+      margin-left: 1.0rem; }
+      .fondoPantalla nav .menu li {
+        list-style: none;
+        padding-bottom: 20px;
+        font-size: 2.5rem;
+        font-family: 'Cinzel', serif; }
+      .fondoPantalla nav .menu a {
+        text-decoration: none;
+        color: #018075; }
+      .fondoPantalla nav .menu a:hover {
+        color: #62f5fa;
+        transition: 1.0s; }
+  .fondoPantalla main {
+    grid-area: main;
+    width: 100.0rem;
+    margin-left: 5.0rem; }
+    .fondoPantalla main .carrusel {
+      width: 82.0rem;
+      margin-left: 5.0rem;
+      margin-top: 0%; }
+    .fondoPantalla main h5 {
+      font-size: 2.0rem;
+      color: #c7ffff;
+      font-family: 'Cinzel', serif;
+      background-color: black; }
+    .fondoPantalla main p {
+      font-size: 1.8rem;
+      background-color: black;
+      color: #c7ffff; }
+
+footer {
+  grid-area: footer;
+  font-size: 4.0rem;
+  font-family: 'Cinzel', serif;
+  color: #c7ffff;
+  text-align: center;
+  height: auto;
+  background: radial-gradient(circle, #0e1d1b 0%, #0c221f 29%, #0b3b2d 84%, #006956 100%); }
+  footer p {
+    float: right;
+    color: #c7ffff;
+    font-size: 1.5rem; }
+  footer li {
+    display: inline; }
