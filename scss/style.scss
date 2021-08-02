@@ -9,11 +9,11 @@ html{
 //import
 @import "responsive";
 //variables
-$color-primario: #018075;
+$color-primario: #0b968a;
 $color-secundario: rgb(98, 245, 250);
 $color-terceario:rgb(199, 255, 255);
 $color-cuarteario:black;
-
+/*estilos generales*/
 .fondoPantalla{
     display: grid;
     width: 100%;
@@ -26,8 +26,9 @@ $color-cuarteario:black;
         " nav    main   main    main"
         "footer footer footer  footer "
     ;
-    background: rgb(3,27,20);
-    background: linear-gradient( rgb(1, 12, 9) 0%, rgba(7,25,22,1) 30%, rgb(8, 49, 41) 58%, rgb(8, 71, 61) 87%, rgb(21, 124, 107) 97%, rgb(13, 167, 138) 100%);
+    background-image: url(../img/ff1.png);
+    background-repeat: no-repeat;
+    background-position: center;
     header{
         grid-area: header;
         width: 100%;
@@ -44,7 +45,7 @@ $color-cuarteario:black;
         h1{
             margin-left: 30.0rem;
             font-size: 5.0rem;
-            color:$color-primario;
+            color:$color-cuarteario;
             font-family: 'Cinzel', serif;
         }
         .boton{
@@ -64,17 +65,16 @@ $color-cuarteario:black;
     }
     nav{
         grid-area: nav;
-        background-image: url(../img/corcho.png);
+        background-color: $color-cuarteario;
         width: auto;
         .menu{
-            padding: 10px;
             position:absolute;
-            top: 25.0rem;
+            top: 18.0rem;
             background-color:$color-cuarteario;
             margin-left: 1.0rem;
             li {
                 list-style: none;
-                padding-bottom: 20px;
+                padding-bottom: 4.0rem;
                 font-size: 2.5rem;
                 font-family: 'Cinzel', serif;
             }
@@ -117,8 +117,7 @@ footer{
     font-family: 'Cinzel', serif;
     color:$color-terceario;
     text-align: center;
-    height: auto;
-    background: radial-gradient(circle, rgba(14,29,27,1) 0%, rgba(12,34,31,1) 29%, rgba(11,59,45,1) 84%, rgba(0,105,86,1) 100%);
+    background: radial-gradient(circle, rgb(26, 68, 63) 29%, rgb(39, 80, 78) 84%, rgb(15, 156, 145) 100%);
     p{
         float: right;
         color:$color-terceario;
@@ -126,5 +125,102 @@ footer{
     }
     li{
         display: inline;
+    }
+}
+/*estilo de haztucompra*/
+#canasta{
+    position: absolute;
+    top: 2.0rem;
+    width: 10.0rem;
+    height: 9.0rem;
+    left: 120.0rem;
+    border: none;
+}
+.venta{
+    height: 40.0rem;
+    overflow-y: scroll;
+    section{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.card{
+    .card-body{
+        background-color: $color-cuarteario;
+    }
+    .btn-primary{
+        color: $color-cuarteario;
+        background-color: $color-primario;
+    }
+}
+/*estilo de blog*/
+.blog{
+    height: 40.0rem;
+    overflow-y: scroll;
+    margin-left: 10.0rem;
+    font-size: 2.0rem;
+    color:rgb(199, 255, 255);
+    .card{
+        background-color: $color-cuarteario;
+        img{
+            margin: 1.5rem;
+        }
+    }
+}
+/*estilo contactanos*/
+.contacto{
+    font-size: 2.5rem;
+    border:$color-primario double 0.8rem;
+    margin-left: 15.0rem;
+    margin-right: 20.0rem;
+    margin-top: 8.0rem;
+    background-color:$color-cuarteario;
+    color:$color-terceario;
+}
+/*estilo aliados*/
+.tabla{
+    border: $color-primario double 0.8rem;
+    font-size: 2.0rem;
+    width: 75.0rem;
+    margin-left:13.0rem;
+    margin-top:8.0rem;
+    background-color:$color-cuarteario;
+    color:$color-terceario;
+}
+/**estilos comentarios**/
+.seccion3{
+    width: 50.0rem;
+    height: 35.0rem;
+    border:$color-primario double 1.0rem;
+    font-size: 2.0rem;
+    color:$color-terceario;
+    margin-left: 25.0rem;
+    margin-top: 3.0rem;
+    background-color: $color-cuarteario;
+}
+/**estilos inscripcion**/
+.seccion1{
+    width: 40.0rem;
+    height: 40.0rem;
+    border:$color-primario double 1.0rem;
+    font-size: 1.5rem;
+    color:$color-terceario;
+    margin-left: 3.0rem;
+    background-color: $color-cuarteario;
+}
+.seccion2{
+    width: 40.0rem;
+    height: 40.0rem;
+    border: $color-primario double 1.0rem;
+    font-size: 2.0rem;
+    color:$color-terceario;
+    position: absolute;
+    top: 23.7rem;
+    left: 82.0rem;
+    background-color: $color-cuarteario;
+    .fondoBoton{
+        display: block;
+        background-color:$color-cuarteario;
+        color:$color-primario;
     }
 }

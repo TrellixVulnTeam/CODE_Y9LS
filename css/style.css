@@ -6,6 +6,7 @@
 html {
   font-size: 62.5%; }
 
+/*estilos generales*/
 .fondoPantalla {
   display: grid;
   width: 100%;
@@ -13,8 +14,9 @@ html {
   grid-template-rows: 1fr 1fr 1fr 0.1fr;
   grid-template-columns: 20% 27% 27% 26%;
   grid-template-areas: " nav   header header header" " nav    main   main    main" " nav    main   main    main" "footer footer footer  footer ";
-  background: #031b14;
-  background: linear-gradient(#010c09 0%, #071916 30%, #083129 58%, #08473d 87%, #157c6b 97%, #0da78a 100%); }
+  background-image: url(../img/ff1.png);
+  background-repeat: no-repeat;
+  background-position: center; }
   .fondoPantalla header {
     grid-area: header;
     width: 100%; }
@@ -23,18 +25,18 @@ html {
       margin: 1.0rem auto;
       width: 27.0rem;
       height: 15.0rem;
-      border: #018075 inset; }
+      border: #0b968a inset; }
     .fondoPantalla header #logo {
       margin-left: 40.0rem; }
     .fondoPantalla header h1 {
       margin-left: 30.0rem;
       font-size: 5.0rem;
-      color: #018075;
+      color: black;
       font-family: 'Cinzel', serif; }
     .fondoPantalla header .boton {
       text-decoration: none;
       font-size: 1.5rem;
-      color: #018075;
+      color: #0b968a;
       background-color: black;
       float: right;
       padding: 1.0rem;
@@ -45,22 +47,21 @@ html {
       color: #62f5fa; }
   .fondoPantalla nav {
     grid-area: nav;
-    background-image: url(../img/corcho.png);
+    background-color: black;
     width: auto; }
     .fondoPantalla nav .menu {
-      padding: 10px;
       position: absolute;
-      top: 25.0rem;
+      top: 18.0rem;
       background-color: black;
       margin-left: 1.0rem; }
       .fondoPantalla nav .menu li {
         list-style: none;
-        padding-bottom: 20px;
+        padding-bottom: 4.0rem;
         font-size: 2.5rem;
         font-family: 'Cinzel', serif; }
       .fondoPantalla nav .menu a {
         text-decoration: none;
-        color: #018075; }
+        color: #0b968a; }
       .fondoPantalla nav .menu a:hover {
         color: #62f5fa;
         transition: 1.0s; }
@@ -88,11 +89,101 @@ footer {
   font-family: 'Cinzel', serif;
   color: #c7ffff;
   text-align: center;
-  height: auto;
-  background: radial-gradient(circle, #0e1d1b 0%, #0c221f 29%, #0b3b2d 84%, #006956 100%); }
+  background: radial-gradient(circle, #1a443f 29%, #27504e 84%, #0f9c91 100%); }
   footer p {
     float: right;
     color: #c7ffff;
     font-size: 1.5rem; }
   footer li {
     display: inline; }
+
+/*estilo de haztucompra*/
+#canasta {
+  position: absolute;
+  top: 2.0rem;
+  width: 10.0rem;
+  height: 9.0rem;
+  left: 120.0rem;
+  border: none; }
+
+.venta {
+  height: 40.0rem;
+  overflow-y: scroll; }
+  .venta section {
+    display: flex;
+    justify-content: space-around; }
+
+.card .card-body {
+  background-color: black; }
+
+.card .btn-primary {
+  color: black;
+  background-color: #0b968a; }
+
+/*estilo de blog*/
+.blog {
+  height: 40.0rem;
+  overflow-y: scroll;
+  margin-left: 10.0rem;
+  font-size: 2.0rem;
+  color: #c7ffff; }
+  .blog .card {
+    background-color: black; }
+    .blog .card img {
+      margin: 1.5rem; }
+
+/*estilo contactanos*/
+.contacto {
+  font-size: 2.5rem;
+  border: #0b968a double 0.8rem;
+  margin-left: 15.0rem;
+  margin-right: 20.0rem;
+  margin-top: 8.0rem;
+  background-color: black;
+  color: #c7ffff; }
+
+/*estilo aliados*/
+.tabla {
+  border: #0b968a double 0.8rem;
+  font-size: 2.0rem;
+  width: 75.0rem;
+  margin-left: 13.0rem;
+  margin-top: 8.0rem;
+  background-color: black;
+  color: #c7ffff; }
+
+/**estilos comentarios**/
+.seccion3 {
+  width: 50.0rem;
+  height: 35.0rem;
+  border: #0b968a double 1rem;
+  font-size: 2.0rem;
+  color: #c7ffff;
+  margin-left: 25.0rem;
+  margin-top: 3.0rem;
+  background-color: black; }
+
+/**estilos inscripcion**/
+.seccion1 {
+  width: 40.0rem;
+  height: 40.0rem;
+  border: #0b968a double 1rem;
+  font-size: 1.5rem;
+  color: #c7ffff;
+  margin-left: 3.0rem;
+  background-color: black; }
+
+.seccion2 {
+  width: 40.0rem;
+  height: 40.0rem;
+  border: #0b968a double 1rem;
+  font-size: 2.0rem;
+  color: #c7ffff;
+  position: absolute;
+  top: 23.7rem;
+  left: 82.0rem;
+  background-color: black; }
+  .seccion2 .fondoBoton {
+    display: block;
+    background-color: black;
+    color: #0b968a; }
