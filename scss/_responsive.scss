@@ -1,0 +1,16 @@
+@media(max-width:697px){
+    .fondoPantalla{
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-rows: 1fr 1fr 1fr 0.1fr;
+        grid-template-columns: 20% 27% 27% 26% ;
+        grid-template-areas: 
+            " nav   header header header"
+            " nav    main   main    main"
+            " nav    main   main    main"
+            "footer footer footer  footer "
+        ;
+        background-image: url(../img/resp.png);
+    }
+}
