@@ -13,10 +13,7 @@ html {
     height: auto;
     grid-template-rows: 1fr 1fr 1fr 0.1fr;
     grid-template-columns: 20% 27% 27% 26%;
-    grid-template-areas: " nav   header header header"
- " nav    main   main    main"
- " nav    main   main    main"
- "footer footer footer  footer ";
+    grid-template-areas: " nav   header header header" " nav    main   main    main" " nav    main   main    main" "footer footer footer  footer ";
     background-image: url(../img/resp.png); } }
 
 /*estilos generales*/
@@ -26,10 +23,7 @@ html {
   height: auto;
   grid-template-rows: 1fr 1fr 1fr 0.1fr;
   grid-template-columns: 20% 27% 27% 26%;
-  grid-template-areas: " nav   header header header"
- " nav    main   main    main"
- " nav    main   main    main"
- "footer footer footer  footer ";
+  grid-template-areas: " nav   header header header" " nav    main   main    main" " nav    main   main    main" "footer footer footer  footer ";
   background-image: url(../img/ff1.png);
   background-repeat: no-repeat;
   background-position: center; }
@@ -105,7 +99,7 @@ footer {
   font-family: 'Cinzel', serif;
   color: #c7ffff;
   text-align: center;
-  background: radial-gradient(circle, #1a443f 29%, #27504e 84%, #0f9c91 100%); }
+  background: lineal-gradient(circle, #fbffff 29%, #7bafad 84rgb 37, 173, 162 45); }
   footer p {
     float: right;
     color: #c7ffff;
