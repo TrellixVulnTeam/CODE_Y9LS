@@ -46,7 +46,7 @@
     background-color: #66948e; }
 
 .blog {
-  height: 110.0vw;
+  height: 100.0vw;
   width: 100%;
   overflow-y: scroll;
   font-size: 1.3vw;
@@ -71,7 +71,8 @@
 /*estilo aliados*/
 .tabla {
   font-size: 1.5vw;
-  width: 60.5vw;
+  width: 70.5vw;
+  height: 30.0vw;
   margin-left: 10.0vw;
   background-color: black;
   color: #c7ffff;
@@ -142,12 +143,11 @@ body {
 footer {
   background-color: black;
   bottom: 0;
-  top: 1000px;
   position: sticky;
+  top: 1000px;
   width: 100%;
   padding: 0; }
   footer .footer-bottom {
-    padding: 40px 0 30px;
     border-top: 1px solid black;
     background: #02181a; }
   footer .copyright-text p {
