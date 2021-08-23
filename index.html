@@ -1,95 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <!----------SEO-->
-  <meta name="keywords" content="Licor, mensajeria, domicilios, servicio, bebidas">
-  <title>BALU/Home</title>
-  <meta name="description" content="Este sitio web esta creado pensando en la facilidad de comprar licor a domicilio y brindarle a los dueños de negocios una herramienta practica para una mejor distribucion de sus productos al alcance de un click.">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Licor, mensajeria, domicilios, servicio, bebidas">
+    <title>BALU/Bebidas</title>
+    <meta name="description" content="Este sitio web esta creado pensando en la facilidad de comprar licor a domicilio y brindarle a los dueños de negocios una herramienta practica para una mejor distribucion de sus productos al alcance de un click.">
         <!-----meta datos extra-->
         <meta name="author" content="Vanessa Peña">
         <meta name="copyright" content="BALU/BebidasATuPuerta">
         <meta property="og:title" content="BALU/BebidasATuPuerta">
         <meta property="og:image" content="../img/logo.png">
-<!----links-->
+    <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--TIPOS DE LETRAS POSIBLES-->
+    <script src="https://kit.fontawesome.com/17ad1d40bf.js" crossorigin="anonymous"></script>
 </head>
-<body class="fondoPantalla">
+<body>
   <header>
-<!----------------aqui van los botones a la altura del titulo--------------->
-    <div>
-      <a href="paginas/inscripcion.html" class="boton">Inscripcion</a>
-      <a href="paginas/comentarios.html" class="boton">Comentarios</a>
-    </div>
-      <img src="img/logo.png" id="logo"alt="logo">      
-      <h1>bebidas a tu puerta</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html"><img src="img/logoo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./paginas/haztucompra.html">HAZ TU COMPRA</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./paginas/blog.html">BLOG</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./paginas/contactanos.html">CONTACTANOS</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./paginas/aliados.html">ALIADOS</a>
+            </li>
+          </ul>
+        <div>
+          <button><a href="./paginas/comentarios.html">Comentarios</a></button>
+          <button><a href="./paginas/inscripcion.html">inscripcion</a></button>
+        </div>
+        </div>
+      </nav>
   </header>
-    <nav>
-      <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="paginas/haztucompra.html">Haz tu compra</a></li>
-        <li><a href="paginas/blog.html">Blog</a></li>
-        <li><a href="paginas/contactanos.html">Contactanos</a></li>
-        <li><a href="paginas/aliados.html">Aliados</a></li>
-      </ul>
-    </nav>
-  <main class="container-fluid" class="img-fluid">
-    <section class="carrusel">
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-      <div class="carousel-item active">
+<!--AQUI COMIENZA EL CONTENIDO-->
+<section class="carrusel">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-12">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
                 <img src="img/carrusell-min.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>«Para que el arte exista, para cualquier clase de actividad estética o percepción exista, es indispensable una cierta fisiológica condición previa: la intoxicación.» </h5>
-                  <p>― Friedrich Nietzsche (1844-1900)</p>
-                </div>
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
               </div>
-              <div class="carousel-item">
-                <img src="img/carrusel3.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>“Si ocurre algo malo, bebes para olvidarlo; si ocurre algo bueno, bebes para celebrarlo; y si no pasa nada, bebes para que pase algo.”</h5>
-                  <p>― Charles Bukowski (1920-1994)</p>
+                <div class="carousel-item">
+                  <img src="img/carrusel3.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/carrusel2-min.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>«Oh, usted odia su trabajo? ¿Por qué no lo dijiste? Hay un grupo de apoyo para eso. Se llama «TODO EL MUNDO», y se reúnen en el bar.»</h5>
-                  <p>― Drew Carey (1958)</p>
-                </div>
+                  <div class="carousel-item">
+                    <img src="img/carrusel2-min.png" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                      </div>
+                  </div>
+            </div>
+              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+            <div class="col-md-4 col-sm-12">
+              <p class="principal">«Para que el arte exista, para cualquier clase de actividad estética o percepción exista, es indispensable una cierta fisiológica condición previa... la intoxicación.»</p>
+            </div>
+      </div>
+    </div>
+</section>
+  <!--AQUI VA EL FOOTER-->
+
+<footer>
+  <div class="footer-bottom">
+    <div class="container">
+              <div class="row">
+                <div class="col-sm-6 ">
+                  <div class="copyright-text">
+                    <p>CopyRight © ¡Visita Nuestras Redes Sociales!</p>
+                  </div>
+                </div> <!-- End Col -->
+                <div class="col-sm-6">							
+                  <ul class="social-link pull-right">
+                    <li><a href="https://www.facebook.com/balu112233"><img src="img/face-min.png" alt="fb"><span class="glyphicon glyphicon-heart-empty"></span></a></li>						
+                    <li><a href="https://www.instagram.com/?hl=es-la"><img src="img/instagram-min.png" alt="face"><span class="glyphicon glyphicon-heart-empty"></span></a></li>
+                  </ul>							
+                </div> <!-- End Col -->
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-       </section>   
-    </main>
-    <footer>
-        <ul>¡Visita Nuestras Redes Sociales! 
-            <li><a href="https://www.facebook.com/balu112233"><img src="img/face-min.png" alt="fb"></a></li>
-            <li><a href="https://www.instagram.com/?hl=es-la"><img src="img/instagram-min.png" alt="face"></a></li>
-            <li><a href="https://www.instagram.com/?hl=es-la"><img src="img/whatsapp-min.png" alt="insta"></a></li>
-        </ul>
-        <p >By:Vanessa Peña</p>
-    </footer>
-    </body>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </div>
+</footer>
+    <!--SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
 </html>

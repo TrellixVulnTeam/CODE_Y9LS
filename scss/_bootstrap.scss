@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*CARRUSEL INDEX*/
+
+.carrusel{
+    margin-top: 3rem;
+    
+    p{
+        color: rgb(252, 250, 250);
+        font-family: 'Otomanopee One', sans-serif;
+        font-weight: bold;
+        font-size: 2.5vw;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    .boton{
+        margin-left: 10vw;
+    }
+    button{
+        background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+        color: white;
+        font-size: 1.5vw;
+    }
+}
+/*CARDS licores*/
+#tarjeta{
+    height: 30.0rem;
+    overflow-y: scroll;
+    position: absolute;
+    left: 8.0rem;
+}
+.card-body{
+    background-color: black;
+    border: black;
+   
+    .card-title{
+        color: white;
+    }
+    .card-text{
+        color: white;
+    }
+    .btn-primary{
+        background-color:rgb(7, 54, 58);
+        border: none;
+    }
+    .btn-primary:hover{
+        background-color: rgb(102, 148, 142);
+    }
+/*estolos blog*/
+}
+.blog{
+    height: 110.0vw;
+    width: 100%;
+    overflow-y: scroll;
+    font-size: 1.3vw;
+    color:rgb(199, 255, 255);
+    .card{
+        background-color:rgb(0, 0, 0);
+        img{
+            margin: 1.5rem;
+        }
+    }
+}
+/*estilo contactanos*/
+.contacto{
+    margin-left: 15.0vw;
+    margin-right: 20.0vw;
+    background-color:black;
+    border:rgb(7, 54, 58) double 1.0vw;
+    color:rgb(199, 255, 255);
+    h3{font-size: 2.5vw; 
+    }
+    img{
+        min: width 100px;
+    }
+}
+/*estilo aliados*/
+.tabla{
+    font-size: 1.5vw;
+    width: 60.5vw;
+    margin-left:10.0vw;
+    background-color: rgb(0, 0, 0);
+    color:rgb(199, 255, 255);
+    border:rgb(7, 54, 58) double 1.0vw;
+}
+/**estilos comentarios**/
+.seccion3{
+    width: 50.0vw;
+    font-size: 1.5vw;
+    margin-left: 15.0vw;
+    background-color:black;
+    padding: 1.5vw;
+    border:rgb(7, 54, 58) double 1.0vw;
+    .fondoBoton{
+        background-color:rgb(7, 54, 58);
+        border: none;
+        color:rgb(199, 255, 255);
+        font-size: 1.0rem;
+    }
+    .fondoBoton:hover{
+        background-color: rgb(102, 148, 142)
+    }
+}

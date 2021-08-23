@@ -1,141 +1,55 @@
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
-html {
-  font-size: 62.5%; }
+* {
+  margin: 0;
+  padding: 0; }
 
-@media (max-width: 697px) {
-  .fondoPantalla {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-rows: 1fr 1fr 1fr 0.1fr;
-    grid-template-columns: 20% 27% 27% 26%;
-    grid-template-areas: " nav   header header header" " nav    main   main    main" " nav    main   main    main" "footer footer footer  footer ";
-    background-image: url(../img/resp.png); } }
+/*CARRUSEL INDEX*/
+.carrusel {
+  margin-top: 3rem; }
+  .carrusel p {
+    color: #fcfafa;
+    font-family: 'Otomanopee One', sans-serif;
+    font-weight: bold;
+    font-size: 2.5vw;
+    text-align: center;
+    margin-top: 3rem; }
+  .carrusel .boton {
+    margin-left: 10vw; }
+  .carrusel button {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    color: white;
+    font-size: 1.5vw; }
 
-/*estilos generales*/
-.fondoPantalla {
-  display: grid;
-  width: 100%;
-  height: auto;
-  grid-template-rows: 1fr 1fr 1fr 0.1fr;
-  grid-template-columns: 20% 27% 27% 26%;
-  grid-template-areas: " nav   header header header" " nav    main   main    main" " nav    main   main    main" "footer footer footer  footer ";
-  background-image: url(../img/ff1.png);
-  background-repeat: no-repeat;
-  background-position: center; }
-  .fondoPantalla header {
-    grid-area: header;
-    width: 100%; }
-    .fondoPantalla header img {
-      display: block;
-      margin: 1.0rem auto;
-      width: 27.0rem;
-      height: 15.0rem;
-      border: #0b968a inset; }
-    .fondoPantalla header #logo {
-      margin-left: 40.0rem; }
-    .fondoPantalla header h1 {
-      margin-left: 30.0rem;
-      font-size: 5.0rem;
-      color: black;
-      font-family: 'Cinzel', serif; }
-    .fondoPantalla header .boton {
-      text-decoration: none;
-      font-size: 1.5rem;
-      color: #0b968a;
-      background-color: black;
-      float: right;
-      padding: 1.0rem;
-      margin: 0.6rem;
-      font-family: 'Cinzel', serif; }
-    .fondoPantalla header .boton:hover {
-      transition: 2.0s;
-      color: #62f5fa; }
-  .fondoPantalla nav {
-    grid-area: nav;
-    background-color: black;
-    width: auto; }
-    .fondoPantalla nav .menu {
-      position: absolute;
-      top: 18.0rem;
-      background-color: black;
-      margin-left: 1.0rem; }
-      .fondoPantalla nav .menu li {
-        list-style: none;
-        padding-bottom: 4.0rem;
-        font-size: 2.5rem;
-        font-family: 'Cinzel', serif; }
-      .fondoPantalla nav .menu a {
-        text-decoration: none;
-        color: #0b968a; }
-      .fondoPantalla nav .menu a:hover {
-        color: #62f5fa;
-        transition: 1.0s; }
-  .fondoPantalla main {
-    grid-area: main;
-    width: 100.0rem;
-    margin-left: 5.0rem; }
-    .fondoPantalla main .carrusel {
-      width: 82.0rem;
-      margin-left: 5.0rem;
-      margin-top: 0%; }
-    .fondoPantalla main h5 {
-      font-size: 2.0rem;
-      color: #c7ffff;
-      font-family: 'Cinzel', serif;
-      background-color: black; }
-    .fondoPantalla main p {
-      font-size: 1.8rem;
-      background-color: black;
-      color: #c7ffff; }
-
-footer {
-  grid-area: footer;
-  font-size: 4.0rem;
-  font-family: 'Cinzel', serif;
-  color: #c7ffff;
-  text-align: center;
-  background: lineal-gradient(circle, #fbffff 29%, #7bafad 84rgb 37, 173, 162 45); }
-  footer p {
-    float: right;
-    color: #c7ffff;
-    font-size: 1.5rem; }
-  footer li {
-    display: inline; }
-
-/*estilo de haztucompra*/
-#canasta {
-  position: absolute;
-  top: 2.0rem;
-  width: 10.0rem;
-  height: 9.0rem;
-  left: 120.0rem;
-  border: none; }
-
-.venta {
-  height: 40.0rem;
-  overflow-y: scroll; }
-  .venta section {
-    display: flex;
-    justify-content: space-around; }
-
-.card .card-body {
-  background-color: black; }
-
-.card .btn-primary {
-  color: black;
-  background-color: #0b968a; }
-
-/*estilo de blog*/
-.blog {
-  height: 40.0rem;
+/*CARDS licores*/
+#tarjeta {
+  height: 30.0rem;
   overflow-y: scroll;
-  margin-left: 10.0rem;
-  font-size: 2.0rem;
+  position: absolute;
+  left: 8.0rem; }
+
+.card-body {
+  background-color: black;
+  border: black;
+  /*estolos blog*/ }
+  .card-body .card-title {
+    color: white; }
+  .card-body .card-text {
+    color: white; }
+  .card-body .btn-primary {
+    background-color: #07363a;
+    border: none; }
+  .card-body .btn-primary:hover {
+    background-color: #66948e; }
+
+.blog {
+  height: 110.0vw;
+  width: 100%;
+  overflow-y: scroll;
+  font-size: 1.3vw;
   color: #c7ffff; }
   .blog .card {
     background-color: black; }
@@ -144,56 +58,112 @@ footer {
 
 /*estilo contactanos*/
 .contacto {
-  font-size: 2.5rem;
-  border: #0b968a double 0.8rem;
-  margin-left: 15.0rem;
-  margin-right: 20.0rem;
-  margin-top: 8.0rem;
+  margin-left: 15.0vw;
+  margin-right: 20.0vw;
   background-color: black;
+  border: #07363a double 1vw;
   color: #c7ffff; }
+  .contacto h3 {
+    font-size: 2.5vw; }
+  .contacto img {
+    min: width 100px; }
 
 /*estilo aliados*/
 .tabla {
-  border: #0b968a double 0.8rem;
-  font-size: 2.0rem;
-  width: 75.0rem;
-  margin-left: 13.0rem;
-  margin-top: 8.0rem;
+  font-size: 1.5vw;
+  width: 60.5vw;
+  margin-left: 10.0vw;
   background-color: black;
-  color: #c7ffff; }
+  color: #c7ffff;
+  border: #07363a double 1vw; }
 
 /**estilos comentarios**/
 .seccion3 {
-  width: 50.0rem;
-  height: 35.0rem;
-  border: #0b968a double 1rem;
-  font-size: 2.0rem;
-  color: #c7ffff;
-  margin-left: 25.0rem;
-  margin-top: 3.0rem;
-  background-color: black; }
+  width: 50.0vw;
+  font-size: 1.5vw;
+  margin-left: 15.0vw;
+  background-color: black;
+  padding: 1.5vw;
+  border: #07363a double 1vw; }
+  .seccion3 .fondoBoton {
+    background-color: #07363a;
+    border: none;
+    color: #c7ffff;
+    font-size: 1.0rem; }
+  .seccion3 .fondoBoton:hover {
+    background-color: #66948e; }
 
-/**estilos inscripcion**/
-.seccion1 {
-  width: 40.0rem;
-  height: 40.0rem;
-  border: #0b968a double 1rem;
-  font-size: 1.5rem;
-  color: #c7ffff;
-  margin-left: 3.0rem;
-  background-color: black; }
-
-.seccion2 {
-  width: 40.0rem;
-  height: 40.0rem;
-  border: #0b968a double 1rem;
-  font-size: 2.0rem;
-  color: #c7ffff;
-  position: absolute;
-  top: 23.6rem;
-  left: 82.0rem;
-  background-color: black; }
-  .seccion2 .fondoBoton {
-    display: block;
+nav {
+  background-color: #021618;
+  font-size: 1.2rem; }
+  nav li:hover {
+    background-color: #23cfcf; }
+  nav button {
     background-color: black;
-    color: #0b968a; }
+    margin-left: 0.5rem; }
+    nav button a {
+      color: white; }
+    nav button a:hover {
+      color: #23cfcf;
+      transition: 1.9s; }
+
+body {
+  background-image: url(../img/ff1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  z-index: unset; }
+  body h1 {
+    color: white;
+    font-family: 'Otomanopee One', sans-serif;
+    text-align: center; }
+  body h4 {
+    color: white; }
+  body .nosotros {
+    color: white;
+    text-align: center;
+    font-size: 3vw; }
+  body .marcas {
+    background-color: black; }
+  body .trabajar {
+    color: white;
+    text-align: center;
+    font-size: 4.5vw;
+    margin-top: 5rem; }
+  body .principal {
+    font-size: 2.5vw;
+    color: white; }
+
+/*AQUI VA EL FOOTER*/
+/* Credit to https://epicbootstrap.com/snippets/footer-basic */
+footer {
+  background-color: black;
+  bottom: 0;
+  top: 1000px;
+  position: sticky;
+  width: 100%;
+  padding: 0; }
+  footer .footer-bottom {
+    padding: 40px 0 30px;
+    border-top: 1px solid black;
+    background: #02181a; }
+  footer .copyright-text p {
+    color: #c7ffff;
+    margin-top: 9px;
+    margin-bottom: 0; }
+  footer .social-link li {
+    display: inline-block;
+    margin: 0 5px; }
+  footer .social-link li a {
+    color: #c7ffff;
+    width: 40px;
+    height: 30px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition: .5s; }

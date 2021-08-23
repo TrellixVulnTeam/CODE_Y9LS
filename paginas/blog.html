@@ -1,103 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <!----------SEO-->
-  <meta name="keywords" content="Licor, mensajeria, domicilios, servicio, bebidas">
-  <title>BALU/Blog</title>
-  <meta name="description" content="Este sitio web esta creado pensando en la facilidad de comprar licor a domicilio y brindarle a los dueños de negocios una herramienta practica para una mejor distribucion de sus productos al alcance de un click.">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-----meta datos extra-->
-    <meta name="author" content="Vanessa Peña">
-    <meta name="copyright" content="BALU/BebidasATuPuerta">
-    <meta property="og:title" content="BALU/BebidasATuPuerta">
-    <meta property="og:image" content="../img/logo.png">
-    <!---links-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Licor, mensajeria, domicilios, servicio, bebidas">
+    <title>BALU/Bebidas</title>
+    <meta name="description" content="Este sitio web esta creado pensando en la facilidad de comprar licor a domicilio y brindarle a los dueños de negocios una herramienta practica para una mejor distribucion de sus productos al alcance de un click.">
+        <!-----meta datos extra-->
+        <meta name="author" content="Vanessa Peña">
+        <meta name="copyright" content="BALU/BebidasATuPuerta">
+        <meta property="og:title" content="BALU/BebidasATuPuerta">
+        <meta property="og:image" content="../img/logo.png">
+    <!--CSS-->
     <link rel="stylesheet" href="../css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--TIPOS DE LETRAS POSIBLES-->
+    <script src="https://kit.fontawesome.com/17ad1d40bf.js" crossorigin="anonymous"></script>
 </head>
-<body class="fondoPantalla">
-    <header>
-        <img src="../img/logo.png" class="header__logo"alt="logo">      
-        <h1 class="header__h1">bebidas a tu puerta</h1>
-    </header>
-    <nav>
-        <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./haztucompra.html">Haz tu compra</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <li><a href="./contactanos.html">Contactanos</a></li>
-            <li><a href="./aliados.html">Aliados</a></li>
-        </ul>
-    </nav>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="../index.html"><img src="../img/logoo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="haztucompra.html">HAZ TU COMPRA</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="blog.html">BLOG</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contactanos.html">CONTACTANOS</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="aliados.html">ALIADOS</a>
+            </li>
+          </ul>
+        <div>
+          <button><a href="./comentarios.html">Comentarios</a></button>
+        </div>
+        </div>
+      </nav>
+  </header>
+    <br>
 <!----------------aqui va informacion alternativa en secciones--------------------->
-<main>
-    <section class="blog">
-    <div class="card mb-3" style="max-width: 850px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="../img/homer1-min.png" class="img-fluid rounded-start" alt="homer">
+  <section class="blog">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <div class="card mb-3" style="max-width: 70.0rem;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="../img/homer1-min.png" class="img-fluid rounded-start" alt="homer">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Curiosidades de la cerveza</h5>
+                            <p class="card-text">La cerveza es una de las pocas bebidas alcohólicas no destiladas en cuyo proceso no tuvo que ver el azar. La cerveza es resultado de la tecnología doméstica: ensayo y error hasta perfeccionar sabores y variedades.Los babilonios fueron los primeros en perfeccionar la cerveza como tal, eran tan clavados que si algunos litros no eran buenos, el productor de ese lote debía morir ahogado en él.Los Ingredientes básicos de una cerveza son: Cereal (cebada en la mayoría de los casos, pero se acuerdo al lugar donde se produce puede ser maíz, avena, trigo, arroz, sorgo, centeno y hasta papas), lúpulo, levaduras y agua. Cuando se busca aumentar el  grado alcohólico se añade azúcar.El término artesanal en una cerveza está determinado por tres elementos: ser 100% malta, tener una producción menor a 7 millones de hectolitros (100 litros = 1 hectolitro, saca cuentas) y su capital debe ser independiente, sin intervención de grandes grupos Y ya lo dijo Benjamín Franklin en una especie de sano cinismo y con tarro en mano: “la cerveza es prueba de que dios nos ama y desea nuestra felicidad”</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+              </div>
+              
+              <div class="col-12">
+                  <div class="card mb-3" style="max-width: 70.0rem;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="../img/vino1-min.png" class="img-fluid rounded-start" alt="vinos">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Sabias que?...</h5>
+                            <p class="card-text">…El vino no tiene color? Todos los vinos consiguen su color durante la maceración y es en ese proceso, donde se determina el color y el aroma final del vino.</p>
+                            <p class="card-text">… La expresión “que no te la den con queso” viene del vino? Los antiguos bodegueros ofrecían un plato de queso para degustar sus vinos y de esa manera conseguían que fueran considerados como sedosos, ya que en aquella época se demandaban caldos más suaves.</p>
+                            <p class="card-text">… El corcho tiene un papel imprescindible? A parte de que evita que se derrame el vino, el corcho previene de la entrada de oxígeno y partículas externas.</p>
+                            <p class="card-text">… El mar es el medio perfecto para que envejezca un vino? Antiguas botellas de naufragios han sido encontradas en perfectas condiciones y es por ello que existen bodegas submarinas. Además, este método es 100% respetuoso con el Medio Ambiente”.</p>
+                            <p class="card-text">… Europa es el mayor productor de vino del mundo?  Solamente la producción de Europa supera al resto del mundo en total.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+
+              <div class="col-12">
+                  <div class="card mb-3" style="max-width: 70.0rem;">
+                      <div class="row g-0">
+                        <div class="col-md-4">
+                          <img src="../img/dedo2-min.png" class="img-fluid rounded-start" alt="dedo">
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Licores mas raros del mundo</h5>
+                            <p class="card-text">Parece el título de un capitulo de la famosa serie “Mil maneras de morir” pero no. En un bar de Yukon, Australia llamado SOURTOE COCKTAIL CLUB  se sirve un cocktail con un dedo amputado desde 1973 cuando Capitán Dick encontró un dedo de pié humano en un bote de encurtidos. Fue entonces cuando decidió crear un juego en el que debías beber un cocktail con el dedo amputado en su interior hasta que tus labios tocaran el dedo. Una vez un tipo de Nueva Orleans entró en el bar, lanzo 500$ sobre la mesa y se bebió todo el cocktail con el dedo incluido. Desde entonces el dedo ha tenido que ser reemplazado hasta 8 veces algunas de ellas por que el cliente se trago el dedo u otras por que se perdió. Ahora el dueño del bar dispone de dos dedos por si acaso se pierde o alguien lo engulle.</p>
+                            <p class="card-text">Seguro que muchos de vosotros ya habíais visto el licor de serpiente en algún viaje. Suele verse en Tailandia, Laos, Vietnam y otras zonas del Sudeste asiático. Introducen una serpiente normalmente venenosa en Whiskey y muchos pensaréis ¿Y el veneno que? Pues bien el veneno se disuelve en el etanol del licor por lo que no moriréis envenenados. Eso si en ocasiones sumergen vivas las serpientes (Pobres animales) y se han dado casos en los que la serpiente ha mordido al turista despreocupado. No os recomiendo comprar este licor puesto que contribuiréis a que miles de serpientes mueran solo para que nosotros los farangs podamos tener en nuestra estantería una botella especial para mostrar a vuestros amigos. Por esto mismo no voy a dar pistas de donde encontrar el licor de serpiente.</p>
+                            <p class="card-text">Mezcal Mexicano: Este licor seguro que nuestros seguidores Mexicanos lo conocen. Se trata de un licor hecho con zumo de agave fermentado llegando una graduación de 45-60º de alcohol. En su interior contiene un jugoso gusano que se alimenta del agave. Esta bebida es considerada afrodisíaca pero es posible que si te bebes toda la botella genere el efecto contrario provocando un… gatillazo!</p>
+                            <p class="card-text">El licor de lagarto es un clásico y muchos de vosotros lo conoceréis, pero tenia que aparecer en esta lista por que la verdad es que muy común no es. Antes en España podíamos encontrarlo en cualquier restaurante Chino pero parece que sanidad se puso las pilas y desde hace unos años que no lo he vuelto a ver. Es un licor de arroz que en el interior contiene dos o tres lagartos. Tiene unos 60º de alcohol. El lagarto en China es considerado poseedor de una gran fuente de energía.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
           </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Curiosidades de la cerveza</h5>
-              <p class="card-text">La cerveza es una de las pocas bebidas alcohólicas no destiladas en cuyo proceso no tuvo que ver el azar. La cerveza es resultado de la tecnología doméstica: ensayo y error hasta perfeccionar sabores y variedades.Los babilonios fueron los primeros en perfeccionar la cerveza como tal, eran tan clavados que si algunos litros no eran buenos, el productor de ese lote debía morir ahogado en él.Los Ingredientes básicos de una cerveza son: Cereal (cebada en la mayoría de los casos, pero se acuerdo al lugar donde se produce puede ser maíz, avena, trigo, arroz, sorgo, centeno y hasta papas), lúpulo, levaduras y agua. Cuando se busca aumentar el  grado alcohólico se añade azúcar.El término artesanal en una cerveza está determinado por tres elementos: ser 100% malta, tener una producción menor a 7 millones de hectolitros (100 litros = 1 hectolitro, saca cuentas) y su capital debe ser independiente, sin intervención de grandes grupos Y ya lo dijo Benjamín Franklin en una especie de sano cinismo y con tarro en mano: “la cerveza es prueba de que dios nos ama y desea nuestra felicidad”</p>
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="card mb-3" style="max-width: 850px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="../img/vino1-min.png" class="img-fluid rounded-start" alt="vinos">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Sabias que?...</h5>
-              <p class="card-text">…El vino no tiene color? Todos los vinos consiguen su color durante la maceración y es en ese proceso, donde se determina el color y el aroma final del vino.</p>
-              <p class="card-text">… La expresión “que no te la den con queso” viene del vino? Los antiguos bodegueros ofrecían un plato de queso para degustar sus vinos y de esa manera conseguían que fueran considerados como sedosos, ya que en aquella época se demandaban caldos más suaves.</p>
-              <p class="card-text">… El corcho tiene un papel imprescindible? A parte de que evita que se derrame el vino, el corcho previene de la entrada de oxígeno y partículas externas.</p>
-              <p class="card-text">… El mar es el medio perfecto para que envejezca un vino? Antiguas botellas de naufragios han sido encontradas en perfectas condiciones y es por ello que existen bodegas submarinas. Además, este método es 100% respetuoso con el Medio Ambiente”.</p>
-              <p class="card-text">… Europa es el mayor productor de vino del mundo?  Solamente la producción de Europa supera al resto del mundo en total.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-3" style="max-width: 850px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="../img/dedo2-min.png" class="img-fluid rounded-start" alt="dedo">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Licores mas raros del mundo</h5>
-              <p class="card-text">Parece el título de un capitulo de la famosa serie “Mil maneras de morir” pero no. En un bar de Yukon, Australia llamado SOURTOE COCKTAIL CLUB  se sirve un cocktail con un dedo amputado desde 1973 cuando Capitán Dick encontró un dedo de pié humano en un bote de encurtidos. Fue entonces cuando decidió crear un juego en el que debías beber un cocktail con el dedo amputado en su interior hasta que tus labios tocaran el dedo. Una vez un tipo de Nueva Orleans entró en el bar, lanzo 500$ sobre la mesa y se bebió todo el cocktail con el dedo incluido. Desde entonces el dedo ha tenido que ser reemplazado hasta 8 veces algunas de ellas por que el cliente se trago el dedo u otras por que se perdió. Ahora el dueño del bar dispone de dos dedos por si acaso se pierde o alguien lo engulle.</p>
-              <p class="card-text">Seguro que muchos de vosotros ya habíais visto el licor de serpiente en algún viaje. Suele verse en Tailandia, Laos, Vietnam y otras zonas del Sudeste asiático. Introducen una serpiente normalmente venenosa en Whiskey y muchos pensaréis ¿Y el veneno que? Pues bien el veneno se disuelve en el etanol del licor por lo que no moriréis envenenados. Eso si en ocasiones sumergen vivas las serpientes (Pobres animales) y se han dado casos en los que la serpiente ha mordido al turista despreocupado. No os recomiendo comprar este licor puesto que contribuiréis a que miles de serpientes mueran solo para que nosotros los farangs podamos tener en nuestra estantería una botella especial para mostrar a vuestros amigos. Por esto mismo no voy a dar pistas de donde encontrar el licor de serpiente.</p>
-              <p class="card-text">Mezcal Mexicano: Este licor seguro que nuestros seguidores Mexicanos lo conocen. Se trata de un licor hecho con zumo de agave fermentado llegando una graduación de 45-60º de alcohol. En su interior contiene un jugoso gusano que se alimenta del agave. Esta bebida es considerada afrodisíaca pero es posible que si te bebes toda la botella genere el efecto contrario provocando un… gatillazo!</p>
-              <p class="card-text">El licor de lagarto es un clásico y muchos de vosotros lo conoceréis, pero tenia que aparecer en esta lista por que la verdad es que muy común no es. Antes en España podíamos encontrarlo en cualquier restaurante Chino pero parece que sanidad se puso las pilas y desde hace unos años que no lo he vuelto a ver. Es un licor de arroz que en el interior contiene dos o tres lagartos. Tiene unos 60º de alcohol. El lagarto en China es considerado poseedor de una gran fuente de energía.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    <section>
-        <h2>Cocteles y bebidas llamativas</h2>
-        <iframe  width="780" height="535" src="https://www.youtube.com/embed/xCPT8lQq1Dk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-</section>
-</main>
+  </section>
+<br>
+<!----footer-->
 <footer>
-    <ul>¡Visita Nuestras Redes Sociales! 
-        <li><a href="https://www.facebook.com/balu112233"><img src="../img/face-min.png" alt="fb"></a></li>
-        <li><a href="https://www.instagram.com/?hl=es-la"><img src="../img/instagram-min.png" alt="face"></a></li>
-        <li><a href="https://www.instagram.com/?hl=es-la"><img src="../img/whatsapp-min.png" alt="insta"></a></li>
-    </ul>
-    <p >By:Vanessa Peña</p>
+  <div class="footer-bottom">
+    <div class="container">
+              <div class="row">
+                <div class="col-sm-6 ">
+                  <div class="copyright-text">
+                    <p>CopyRight © ¡Visita Nuestras Redes Sociales!</p>
+                  </div>
+                </div> <!-- End Col -->
+                <div class="col-sm-6">							
+                  <ul class="social-link pull-right">
+                    <li><a href="https://www.facebook.com/balu112233"><img src="../img/face-min.png" alt="fb"><span class="glyphicon glyphicon-heart-empty"></span></a></li>						
+                    <li><a href="https://www.instagram.com/?hl=es-la"><img src="../img/instagram-min.png" alt="face"><span class="glyphicon glyphicon-heart-empty"></span></a></li>
+                  </ul>							
+                </div> <!-- End Col -->
+              </div>
+            </div>
+    </div>
 </footer>
+<!--SCRIPTS-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </html>
