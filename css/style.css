@@ -33,7 +33,8 @@
   border: black solid;
   /*estilos blog*/ }
   .card-body .card-title {
-    color: white; }
+    color: white;
+    font-size: 1.0rem; }
   .card-body .card-text {
     color: white; }
   .card-body .btn-primary {
