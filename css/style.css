@@ -26,15 +26,12 @@
 
 /*CARDS licores*/
 #tarjeta {
-  height: 30.0rem;
-  overflow-y: scroll;
-  position: absolute;
-  left: 8.0rem; }
+  margin-left: 1.5rem; }
 
 .card-body {
   background-color: black;
-  border: black;
-  /*estolos blog*/ }
+  border: black solid;
+  /*estilos blog*/ }
   .card-body .card-title {
     color: white; }
   .card-body .card-text {
@@ -46,10 +43,7 @@
     background-color: #66948e; }
 
 .blog {
-  height: 100.0vw;
-  width: 100%;
-  overflow-y: scroll;
-  font-size: 1.3vw;
+  font-size: 1.3rem;
   color: #c7ffff; }
   .blog .card {
     background-color: black; }
@@ -66,7 +60,7 @@
   .contacto h3 {
     font-size: 2.5vw; }
   .contacto img {
-    min: width 100px; }
+    width: 100px; }
 
 /*estilo aliados*/
 .tabla {
